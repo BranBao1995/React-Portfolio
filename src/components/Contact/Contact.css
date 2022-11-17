@@ -69,3 +69,66 @@
 .error-text {
   color: red;
 }
+
+@media screen and (max-width: 1000px) {
+  .form {
+    width: 70%;
+  }
+
+  .form input {
+    width: 80%;
+  }
+
+  .form textarea {
+    width: 80%;
+  }
+
+  .form-button {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    width: 80%;
+  }
+
+  .form input {
+    width: 80%;
+  }
+
+  .form textarea {
+    width: 80%;
+  }
+
+  .form-button {
+    width: 35%;
+  }
+
+  .form p {
+    text-align: center;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    width: 100%;
+  }
+
+  .form input {
+    width: 90%;
+  }
+
+  .form textarea {
+    width: 90%;
+  }
+
+  .form-button {
+    width: 45%;
+  }
+
+  .form p {
+    font-size: var(--font-small);
+  }
+}

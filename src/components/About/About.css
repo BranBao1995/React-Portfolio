@@ -36,3 +36,71 @@
   font-size: var(--font-small);
   line-height: 2;
 }
+
+@media screen and (max-width: 900px) {
+  .about {
+    padding: 10rem 7rem;
+  }
+
+  .avatar {
+    padding-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .avatar {
+    width: 80%;
+    border-bottom: 1px solid rgb(49, 48, 48);
+    border-right: none;
+    padding-right: 0;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+  }
+
+  .bio {
+    display: block;
+    width: 80%;
+    padding-left: 0;
+    padding-top: 6rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .bio {
+    width: 90%;
+    padding-left: 0;
+  }
+  .bio-text {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .avatar {
+    width: 100%;
+    padding-bottom: 5rem;
+  }
+  .avatar-image {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .bio {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 3rem;
+  }
+  .bio-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}

@@ -68,3 +68,38 @@
 .proficiencies-list-item-name {
   color: black;
 }
+
+@media screen and (max-width: 600px) {
+  .proficiencies {
+    width: 90%;
+  }
+
+  .proficiencies-title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .resume {
+    padding: 5rem 0;
+    row-gap: 4rem;
+  }
+
+  .resume-title {
+    font-size: 2.5rem;
+  }
+
+  .proficiencies-title {
+    font-size: 2.5rem;
+  }
+
+  .proficiencies-list {
+    padding: 0;
+    column-gap: 2rem;
+    row-gap: 1rem;
+  }
+
+  .proficiencies-list-item {
+    font-size: 1.6rem;
+  }
+}
