@@ -1,0 +1,24 @@
+import React from "react";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import "./Footer.css";
+
+function Footer() {
+  return (
+    <div className="footer">
+      <div className="icon-container">
+        <a className="footer-link" href="https://github.com/BranBao1995">
+          <FaGithub />
+        </a>
+        <a
+          className="footer-link"
+          href="https://www.linkedin.com/in/hongdong-brandon-bao/"
+        >
+          <FaLinkedin />
+        </a>
+      </div>
+    </div>
+  );
+}
+
+export default Footer;

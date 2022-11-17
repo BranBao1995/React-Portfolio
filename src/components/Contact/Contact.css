@@ -1,0 +1,71 @@
+.contact {
+  width: 100%;
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+}
+
+.form input {
+  width: 80%;
+  height: 4rem;
+  padding: 1rem;
+
+  font-family: var(--font-primary);
+  font-size: var(--font-small);
+}
+
+.form textarea {
+  width: 80%;
+  height: 19rem;
+  padding: 1rem;
+  font-family: var(--font-primary);
+  font-size: var(--font-small);
+  resize: none;
+}
+
+.form-button {
+  width: 25%;
+  padding: 1.5rem 1rem;
+  background: none;
+  font-family: var(--font-primary);
+  font-size: var(--font-medium);
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+.form-button:hover {
+  border: 1px solid green;
+  color: green;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.form p {
+  font-family: var(--font-primary);
+  font-size: var(--font-medium);
+  line-height: 2;
+}
+
+.success-text {
+  color: green;
+}
+
+.error-text {
+  color: red;
+}

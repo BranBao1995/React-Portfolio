@@ -1,0 +1,38 @@
+.about {
+  width: 100%;
+  padding: 17rem 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  border-right: 1px solid rgb(49, 48, 48);
+  padding-right: 17rem;
+}
+
+.avatar-image {
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 10px #e78267;
+}
+
+.bio {
+  display: block;
+  width: 50%;
+  padding-left: 6rem;
+}
+
+.bio-text {
+  font-family: var(--font-primary);
+  font-size: var(--font-small);
+  line-height: 2;
+}
