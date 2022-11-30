@@ -4,6 +4,7 @@ import horisen from "../../images/Horisen.JPG";
 import kkproject from "../../images/kk_project.png";
 import beerMealBuddies from "../../images/beer_meal_buddies.JPG";
 import shophub from "../../images/shophub.png";
+import sixAuto from "../../images/6ixAuto.png";
 import "./Projects.css";
 
 function Projects() {
@@ -31,6 +32,12 @@ function Projects() {
       name: "Shophub",
       image: shophub,
       link: "https://frightful-coffin-45274.herokuapp.com/api/departments",
+    },
+    {
+      id: "project 5",
+      name: "6ixAuto",
+      image: sixAuto,
+      link: "https://the6ixauto.herokuapp.com/",
     },
   ];
 
