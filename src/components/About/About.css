@@ -1,19 +1,23 @@
 .about {
   width: 100%;
-  padding: 17rem 10rem;
+  padding: 10rem 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-education {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-
 .avatar {
   width: 50%;
   display: flex;
-  justify-content: right;
+  justify-content: center;
   align-items: center;
-  border-right: 1px solid rgb(49, 48, 48);
-  padding-right: 17rem;
 }
 
 .avatar-image {
@@ -25,16 +29,69 @@
   box-shadow: 0 0 20px 10px #e78267;
 }
 
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 2rem;
+  font-family: var(--font-primary);
+  font-size: var(--font-small);
+}
+
+.education-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.school-logo {
+  width: 7rem;
+  height: 7rem;
+}
+
 .bio {
-  display: block;
-  width: 50%;
-  padding-left: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5rem;
+  width: 80%;
+  padding-top: 8rem;
 }
 
 .bio-text {
   font-family: var(--font-primary);
   font-size: var(--font-small);
   line-height: 2;
+  text-align: center;
+}
+
+.soft-skills-intro {
+  font-family: var(--font-primary);
+  font-size: var(--font-medium);
+  text-align: center;
+}
+
+.soft-skills {
+  font-family: var(--font-primary);
+  font-size: var(--font-small);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 3rem;
+}
+
+.soft-skills-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
 }
 
 @media screen and (max-width: 900px) {

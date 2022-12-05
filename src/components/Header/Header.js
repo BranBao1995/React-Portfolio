@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "./Navigation";
 import "./Header.css";
+import logo from "../../images/logo-no-bg.png";
 
 function Header(props) {
   const clickLinkHandler = (navItem) => {
@@ -9,7 +10,7 @@ function Header(props) {
 
   return (
     <header className="header">
-      <h1 className="header-h1">My Portfolio</h1>
+      <img className="logo" src={logo} alt="personal logo"></img>
       <Navigation
         activeLink={props.pageActive}
         onClickHandler={clickLinkHandler}

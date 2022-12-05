@@ -1,7 +1,7 @@
 import React from "react";
 import { saveAs } from "file-saver";
 import { FaCheck } from "react-icons/fa";
-import resume from "../../resume.docx";
+import resume from "../../MyResume_WebDev.docx";
 import "./Resume.css";
 
 function Resume() {
@@ -32,7 +32,7 @@ function Resume() {
         Download My Resume
       </h1>
       <div className="proficiencies">
-        <h2 className="proficiencies-title">Check out my skillset</h2>
+        <h2 className="proficiencies-title">My Skillset</h2>
         <ul className="proficiencies-list">
           {proficiencies.map((proficiency) => {
             return (
