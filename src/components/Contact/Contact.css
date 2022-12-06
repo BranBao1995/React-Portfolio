@@ -1,10 +1,41 @@
 .contact {
   width: 100%;
-  padding: 10rem 0;
+  padding: 6rem 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 6rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+}
+
+.contact-link,
+.contact-link:visited,
+.contact-link:active {
+  font-family: var(--font-primary);
+  font-size: var(--font-medium);
+  color: black;
+  padding: 1rem;
+  border-bottom: 2px solid black;
+  transition: all 0.2s;
+}
+
+.contact-link:hover {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+.form-title {
+  font-family: var(--font-primary);
+  font-size: var(--font-medium);
+  text-align: center;
 }
 
 .form {
@@ -89,6 +120,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .form-title {
+    font-size: 2.2rem;
+  }
   .form {
     width: 80%;
   }

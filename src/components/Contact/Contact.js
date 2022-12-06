@@ -68,6 +68,25 @@ function Contact() {
 
   return (
     <div className="contact">
+      <div className="contact-links">
+        <a className="contact-link" href="mailto:brandon.0702@hotmail.com">
+          Send me an email
+        </a>
+        <a className="contact-link" href="https://github.com/BranBao1995">
+          My GitHub
+        </a>
+        <a
+          className="contact-link"
+          href="https://www.linkedin.com/in/hongdong-brandon-bao/"
+        >
+          My LinkedIn
+        </a>
+      </div>
+
+      <h2 className="form-title">
+        Or..., send me a message by submitting the form?
+      </h2>
+
       <form className="form">
         <input
           className={invalidName ? "error" : ""}
