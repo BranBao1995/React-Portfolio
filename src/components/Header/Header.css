@@ -42,12 +42,16 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 1000px) {
+  .logo {
+    width: 30rem;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .header {
-    padding: 4.5rem 0;
-  }
-  .header-h1 {
-    font-size: var(--font-medium);
+    /* padding: 4.5rem 0; */
   }
 
   .nav-items {
@@ -55,11 +59,18 @@
   }
 
   .nav-item {
-    font-size: var(--font-medium);
+    font-size: 2.5rem;
   }
 
   .nav-item-active {
-    font-size: var(--font-medium);
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    width: 25rem;
+    height: auto;
   }
 }
 
@@ -75,7 +86,12 @@
 
 @media screen and (max-width: 600px) {
   .header {
-    padding: 3.5rem 0;
+    padding: 3rem 0;
+  }
+
+  .logo {
+    width: 18rem;
+    height: auto;
   }
 
   .nav-items {
@@ -92,11 +108,12 @@
 
 @media screen and (max-width: 520px) {
   .header {
-    padding: 3rem 0;
+    /* padding: 3rem 0; */
   }
 
-  .header-h1 {
-    font-size: var(--font-small);
+  .logo {
+    width: 15rem;
+    height: auto;
   }
 
   .nav-items {

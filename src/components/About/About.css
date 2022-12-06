@@ -30,6 +30,7 @@
 }
 
 .education {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,6 +51,11 @@
 .school-logo {
   width: 7rem;
   height: 7rem;
+}
+
+.school-certificate {
+  font-size: var(--font-small);
+  line-height: 1.8;
 }
 
 .bio {
@@ -94,61 +100,97 @@
   column-gap: 2rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .avatar {
+    width: 35%;
+  }
+
+  .avatar-image {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .education {
+    width: 65%;
+  }
+
+  .school-logo {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .school-certificate {
+    font-size: 1.7rem;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .about {
-    padding: 10rem 7rem;
+    padding: 10rem 5rem;
   }
 
   .avatar {
-    padding-right: 10rem;
+    padding-right: 7rem;
+  }
+
+  .bio {
+    width: 90%;
   }
 }
 
 @media screen and (max-width: 800px) {
   .about {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .avatar {
-    width: 80%;
-    border-bottom: 1px solid rgb(49, 48, 48);
-    border-right: none;
-    padding-right: 0;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 6rem;
-  }
-
-  .bio {
-    display: block;
-    width: 80%;
-    padding-left: 0;
-    padding-top: 6rem;
-    text-align: center;
+    padding: 7rem 3rem;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .bio {
-    width: 90%;
-    padding-left: 0;
+  .avatar-education {
+    flex-direction: column;
+    row-gap: 4rem;
   }
-  .bio-text {
-    font-size: 1.5rem;
-    line-height: 2;
+
+  .avatar {
+    padding-right: 0;
+  }
+
+  .avatar-image {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .education {
+    width: 90%;
+  }
+
+  .school-logo {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .school-certificate {
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .bio {
+    padding-top: 5rem;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 440px) {
   .avatar {
     width: 100%;
-    padding-bottom: 5rem;
+    /* padding-bottom: 5rem; */
   }
   .avatar-image {
     width: 12rem;
     height: 12rem;
+  }
+
+  .school-certificate {
+    font-size: 1.2rem;
+    line-height: 1.5;
   }
 
   .bio {
@@ -157,7 +199,12 @@
     padding-top: 3rem;
   }
   .bio-text {
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.6;
+  }
+
+  .soft-skills {
+    font-size: 1.2rem;
+    row-gap: 1rem;
   }
 }
