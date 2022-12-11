@@ -33,7 +33,7 @@ function Projects() {
       id: "project 3",
       name: "Shophub",
       image: shophub,
-      link: "https://frightful-coffin-45274.herokuapp.com/api/departments",
+      link: "https://shophub-hongdong.herokuapp.com/",
       repo: "https://github.com/BranBao1995/Shophub",
       description:
         "Shophub is your one-stop online shopping website where you can find groceries, furnitures, electronics, and more.",
