@@ -22,7 +22,7 @@ import mern from "../../images/mern-rmbg.png";
 import UTlogo from "../../images/UofT_SCS.jpg";
 import UOlogo from "../../images/UofO.png";
 
-function About() {
+function About(props) {
   return (
     <section className="about">
       <div className="avatar-education">
@@ -146,6 +146,12 @@ function About() {
           </li>
         </ul>
       </div>
+      <button
+        className="button-redirect"
+        onClick={() => props.onSetPage("projects")}
+      >
+        Go and see my projects
+      </button>
     </section>
   );
 }

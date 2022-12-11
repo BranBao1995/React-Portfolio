@@ -36,9 +36,6 @@
   font-size: var(--font-medium);
   color: red;
 
-  border-bottom: 1px solid red;
-  padding-bottom: 0.3rem;
-
   cursor: pointer;
 }
 

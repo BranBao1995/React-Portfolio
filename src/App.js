@@ -16,7 +16,7 @@ function App() {
 
   const renderPage = () => {
     if (activePage === "about") {
-      return <About />;
+      return <About onSetPage={setPageToRender} />;
     } else if (activePage === "projects") {
       return <Projects />;
     } else if (activePage === "contact") {
@@ -30,7 +30,7 @@ function App() {
     <div className="page">
       <Header pageActive={activePage} onSetPage={setPageToRender} />
       {renderPage()}
-      <Footer />
+      <Footer activeLink={activePage} onClickHandler={setPageToRender} />
     </div>
   );
 }
