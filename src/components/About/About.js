@@ -20,14 +20,13 @@ function About() {
           <li className="education-item">
             <img className="school-logo" src={UTlogo} alt="school logo"></img>
             <span className="school-certificate">
-              Full Stack Web Development Coding Certificate - University of
-              Toronto School of Continuing Studies
+              Full Stack Web Development Coding Certificate
             </span>
           </li>
           <li className="education-item">
             <img className="school-logo" src={UOlogo} alt="school logo"></img>
             <span className="school-certificate">
-              Bachelor of Electrical Engineering - University of Ottawa
+              Bachelor of Electrical Engineering
             </span>
           </li>
         </ul>
@@ -55,7 +54,7 @@ function About() {
           </li>
           <li className="soft-skills-item">
             <FaCheck />
-            Project managements with Agile Methodology.
+            Project management with Agile Methodology.
           </li>
         </ul>
       </div>

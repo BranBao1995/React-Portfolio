@@ -1,51 +1,68 @@
-import React from "react";
+import React, { useState } from "react";
 import { saveAs } from "file-saver";
-import { FaCheck } from "react-icons/fa";
+import { GiMagnifyingGlass } from "react-icons/gi";
+import { FaDownload } from "react-icons/fa";
 import resume from "../../MyResume_WebDev.docx";
+import resume_page_1 from "../../images/page_1.JPG";
+import resume_page_2 from "../../images/page_2.JPG";
+import resume_page_3 from "../../images/page_3.JPG";
 import "./Resume.css";
 
 function Resume() {
-  const proficiencies = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "jQuery.js",
-    "React.js",
-    "Node.js",
-    "Express.js",
-    "MySQL",
-    "Sequalize.js",
-    "MongoDB",
-    "Mongoose",
-    "PWA Development",
-    "MERN Stack App Development",
-    "GraphQL",
-  ];
+  const [showBackdrop, setShowBackdrop] = useState(false);
 
   const downloadResume = () => {
     saveAs(resume, "resume.docx");
   };
 
+  const backdropHandler = () => {
+    setShowBackdrop((prevState) => !prevState);
+  };
+
+  let backdrop = (
+    <div className="resume-backdrop" onClick={backdropHandler}>
+      <img
+        className="resume-backdrop-image"
+        src={resume_page_1}
+        alt="resume backdrop page 1"
+      ></img>
+      <img
+        className="resume-backdrop-image"
+        src={resume_page_2}
+        alt="resume backdrop page 1"
+      ></img>
+      <img
+        className="resume-backdrop-image"
+        src={resume_page_3}
+        alt="resume backdrop page 1"
+      ></img>
+    </div>
+  );
+
   return (
     <div className="resume">
-      <h1 className="resume-title" onClick={downloadResume}>
-        Download My Resume
-      </h1>
-      <div className="proficiencies">
-        <h2 className="proficiencies-title">My Skillset</h2>
-        <ul className="proficiencies-list">
-          {proficiencies.map((proficiency) => {
-            return (
-              <li className="proficiencies-list-item">
-                <FaCheck />
-                <span className="proficiencies-list-item-name">
-                  {proficiency}
-                </span>
-              </li>
-            );
-          })}
-        </ul>
+      <div className="resume-container">
+        <div className="resume-image-container">
+          <img
+            className="resume-image"
+            src={resume_page_1}
+            alt="resume page 1"
+            onClick={backdropHandler}
+          ></img>
+        </div>
+
+        <div className="resume-buttons">
+          <div className="resume-button" onClick={backdropHandler}>
+            <GiMagnifyingGlass />
+            <p className="resume-button-description">View Resume</p>
+          </div>
+          <div className="resume-button" onClick={downloadResume}>
+            <FaDownload />
+            <p className="resume-button-description">Download Resume</p>
+          </div>
+        </div>
       </div>
+      {showBackdrop ? backdrop : ""}
     </div>
   );
 }

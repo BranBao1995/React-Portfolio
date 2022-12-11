@@ -9,7 +9,11 @@ function Project(props) {
         <a className="project-link" href={props.link}>
           {props.name}
         </a>
+        <a className="project-link" href={props.repo}>
+          GitHub Repo
+        </a>
         <p className="project-description">{props.description}</p>
+        <p className="project-description">{props.technologies}</p>
       </div>
     </div>
   );
