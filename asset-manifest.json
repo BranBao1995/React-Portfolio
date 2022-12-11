@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.fd80a7e8.css",
-    "main.js": "/React-Portfolio/static/js/main.f52644fb.js",
+    "main.css": "/React-Portfolio/static/css/main.688eb81a.css",
+    "main.js": "/React-Portfolio/static/js/main.d06627ca.js",
     "static/media/shophub.png": "/React-Portfolio/static/media/shophub.e6e228dfa29ae3154c7d.png",
     "static/media/6ixAuto.png": "/React-Portfolio/static/media/6ixAuto.9161b9529185c5ef5fcb.png",
     "static/media/kk_project.png": "/React-Portfolio/static/media/kk_project.3fdfe2c93df8bc3b2eb1.png",
     "static/media/beer_meal_buddies.JPG": "/React-Portfolio/static/media/beer_meal_buddies.0cfc540510f27d164dcc.JPG",
     "static/media/me.jpg": "/React-Portfolio/static/media/me.60214c483edc5a1f2232.jpg",
+    "static/media/page_2.JPG": "/React-Portfolio/static/media/page_2.66f9a2c5f358ccaa1dc2.JPG",
+    "static/media/MyResume_WebDev.docx": "/React-Portfolio/static/media/MyResume_WebDev.c4353d118d9aa6f4f468.docx",
+    "static/media/page_1.JPG": "/React-Portfolio/static/media/page_1.5347e858a0bf672b2f42.JPG",
+    "static/media/page_3.JPG": "/React-Portfolio/static/media/page_3.dc39dd40167921a98409.JPG",
     "static/media/JATE.png": "/React-Portfolio/static/media/JATE.ca956d4bbc2f14fe6073.png",
-    "static/media/MyResume_WebDev.docx": "/React-Portfolio/static/media/MyResume_WebDev.60d1e34cb7ee3b1ba939.docx",
     "static/media/logo-no-bg.png": "/React-Portfolio/static/media/logo-no-bg.43f29c4f56e75c13b7b1.png",
     "static/media/UofO.png": "/React-Portfolio/static/media/UofO.d57096ddeff4238900b2.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.fd80a7e8.css.map": "/React-Portfolio/static/css/main.fd80a7e8.css.map",
-    "main.f52644fb.js.map": "/React-Portfolio/static/js/main.f52644fb.js.map"
+    "main.688eb81a.css.map": "/React-Portfolio/static/css/main.688eb81a.css.map",
+    "main.d06627ca.js.map": "/React-Portfolio/static/js/main.d06627ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd80a7e8.css",
-    "static/js/main.f52644fb.js"
+    "static/css/main.688eb81a.css",
+    "static/js/main.d06627ca.js"
   ]
 }
