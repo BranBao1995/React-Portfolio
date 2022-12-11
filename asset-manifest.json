@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.688eb81a.css",
-    "main.js": "/React-Portfolio/static/js/main.d06627ca.js",
+    "main.css": "/React-Portfolio/static/css/main.ac7fa625.css",
+    "main.js": "/React-Portfolio/static/js/main.0d1af15f.js",
     "static/media/shophub.png": "/React-Portfolio/static/media/shophub.e6e228dfa29ae3154c7d.png",
     "static/media/6ixAuto.png": "/React-Portfolio/static/media/6ixAuto.9161b9529185c5ef5fcb.png",
     "static/media/kk_project.png": "/React-Portfolio/static/media/kk_project.3fdfe2c93df8bc3b2eb1.png",
@@ -12,14 +12,17 @@
     "static/media/page_1.JPG": "/React-Portfolio/static/media/page_1.5347e858a0bf672b2f42.JPG",
     "static/media/page_3.JPG": "/React-Portfolio/static/media/page_3.dc39dd40167921a98409.JPG",
     "static/media/JATE.png": "/React-Portfolio/static/media/JATE.ca956d4bbc2f14fe6073.png",
+    "static/media/mern-rmbg.png": "/React-Portfolio/static/media/mern-rmbg.484dd6f945d36ea3ec7d.png",
+    "static/media/pwa-rmbg.png": "/React-Portfolio/static/media/pwa-rmbg.03eac37f1d94dba3f013.png",
+    "static/media/mongoose-rmbg.png": "/React-Portfolio/static/media/mongoose-rmbg.886a7b791a2add1cab54.png",
     "static/media/logo-no-bg.png": "/React-Portfolio/static/media/logo-no-bg.43f29c4f56e75c13b7b1.png",
     "static/media/UofO.png": "/React-Portfolio/static/media/UofO.d57096ddeff4238900b2.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.688eb81a.css.map": "/React-Portfolio/static/css/main.688eb81a.css.map",
-    "main.d06627ca.js.map": "/React-Portfolio/static/js/main.d06627ca.js.map"
+    "main.ac7fa625.css.map": "/React-Portfolio/static/css/main.ac7fa625.css.map",
+    "main.0d1af15f.js.map": "/React-Portfolio/static/js/main.0d1af15f.js.map"
   },
   "entrypoints": [
-    "static/css/main.688eb81a.css",
-    "static/js/main.d06627ca.js"
+    "static/css/main.ac7fa625.css",
+    "static/js/main.0d1af15f.js"
   ]
 }
