@@ -1,28 +1,27 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.39064c3e.css",
-    "main.js": "/React-Portfolio/static/js/main.7b18d7c8.js",
+    "main.css": "/React-Portfolio/static/css/main.73a8da46.css",
+    "main.js": "/React-Portfolio/static/js/main.97ef92ed.js",
     "static/media/shophub.png": "/React-Portfolio/static/media/shophub.e6e228dfa29ae3154c7d.png",
     "static/media/6ixAuto.png": "/React-Portfolio/static/media/6ixAuto.9161b9529185c5ef5fcb.png",
     "static/media/kk_project.png": "/React-Portfolio/static/media/kk_project.3fdfe2c93df8bc3b2eb1.png",
     "static/media/beer_meal_buddies.JPG": "/React-Portfolio/static/media/beer_meal_buddies.0cfc540510f27d164dcc.JPG",
     "static/media/me.jpg": "/React-Portfolio/static/media/me.60214c483edc5a1f2232.jpg",
-    "static/media/page_2.JPG": "/React-Portfolio/static/media/page_2.66f9a2c5f358ccaa1dc2.JPG",
-    "static/media/MyResume_WebDev.docx": "/React-Portfolio/static/media/MyResume_WebDev.c4353d118d9aa6f4f468.docx",
-    "static/media/page_1.JPG": "/React-Portfolio/static/media/page_1.5347e858a0bf672b2f42.JPG",
-    "static/media/page_3.JPG": "/React-Portfolio/static/media/page_3.dc39dd40167921a98409.JPG",
+    "static/media/page_2.JPG": "/React-Portfolio/static/media/page_2.c858f522aaace3c59865.JPG",
+    "static/media/MyResume_WebDev.docx": "/React-Portfolio/static/media/MyResume_WebDev.7e7e9ab96e2d63b6f567.docx",
+    "static/media/page_1.JPG": "/React-Portfolio/static/media/page_1.d46fbfff7022ca2e0752.JPG",
+    "static/media/page_3.JPG": "/React-Portfolio/static/media/page_3.e167a9b7de8707837c52.JPG",
     "static/media/JATE.png": "/React-Portfolio/static/media/JATE.ca956d4bbc2f14fe6073.png",
     "static/media/mern-rmbg.png": "/React-Portfolio/static/media/mern-rmbg.484dd6f945d36ea3ec7d.png",
-    "static/media/pwa-rmbg.png": "/React-Portfolio/static/media/pwa-rmbg.03eac37f1d94dba3f013.png",
     "static/media/mongoose-rmbg.png": "/React-Portfolio/static/media/mongoose-rmbg.886a7b791a2add1cab54.png",
     "static/media/logo-no-bg.png": "/React-Portfolio/static/media/logo-no-bg.43f29c4f56e75c13b7b1.png",
     "static/media/UofO.png": "/React-Portfolio/static/media/UofO.d57096ddeff4238900b2.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.39064c3e.css.map": "/React-Portfolio/static/css/main.39064c3e.css.map",
-    "main.7b18d7c8.js.map": "/React-Portfolio/static/js/main.7b18d7c8.js.map"
+    "main.73a8da46.css.map": "/React-Portfolio/static/css/main.73a8da46.css.map",
+    "main.97ef92ed.js.map": "/React-Portfolio/static/js/main.97ef92ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.39064c3e.css",
-    "static/js/main.7b18d7c8.js"
+    "static/css/main.73a8da46.css",
+    "static/js/main.97ef92ed.js"
   ]
 }
