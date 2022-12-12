@@ -17,7 +17,6 @@ import { SiGraphql } from "react-icons/si";
 import { SiApollographql } from "react-icons/si";
 import { SiPwa } from "react-icons/si";
 import mongoose from "../../images/mongoose-rmbg.png";
-import pwa from "../../images/pwa-rmbg.png";
 import mern from "../../images/mern-rmbg.png";
 import UTlogo from "../../images/UofT_SCS.jpg";
 import UOlogo from "../../images/UofO.png";

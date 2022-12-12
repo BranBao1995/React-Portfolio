@@ -1,21 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { validateEmail } from "../../utils/helpers";
+import { FaExclamationCircle } from "react-icons/fa";
 import "./Contact.css";
 
 function Contact() {
-  const successMessage = "Successfully Submitted.";
-  const errorMessage =
-    "Sorry, invalid form input(s). Your name and message must not be empty. You must enter an valid email address.";
+  const [input, setInput] = useState({
+    name: {
+      value: "",
+      valid: false,
+      rule: "string",
+      touched: false,
+      errMessage: "Name must not be empty.",
+    },
+    email: {
+      value: "",
+      valid: false,
+      rule: "email",
+      touched: false,
+      errMessage: "Invalid email.",
+    },
+    message: {
+      value: "",
+      valid: false,
+      rule: "string",
+      touched: false,
+      errMessage: "Message must not be empty.",
+    },
+  });
 
-  const [invalidName, setInvalidName] = useState(false);
-  const [invalidEmail, setInvalidEmail] = useState(false);
-  const [invalidMessage, setInvalidMessage] = useState(false);
+  const validationHandler = (value, rule) => {
+    let isValid = true;
+    if (!rule) {
+      isValid = true;
+    }
+    if (rule === "string") {
+      isValid = value.trim() !== "" && isValid;
+    }
+    if (rule === "email") {
+      isValid = validateEmail(value) && isValid;
+    }
 
-  const [promptMessage, setPromptMessage] = useState("");
-
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+    return isValid;
+  };
 
   const onChangeHandler = (e) => {
     const { target } = e;
@@ -23,47 +49,90 @@ function Contact() {
     const inputValue = target.value;
 
     if (inputType === "name") {
-      setName(inputValue);
+      setInput({
+        ...input,
+        name: {
+          ...input.name,
+          value: inputValue,
+          valid: validationHandler(inputValue, input.name.rule),
+          touched: true,
+        },
+      });
     } else if (inputType === "email") {
-      setEmail(inputValue);
+      setInput({
+        ...input,
+        email: {
+          ...input.email,
+          value: inputValue,
+          valid: validationHandler(inputValue, input.email.rule),
+          touched: true,
+        },
+      });
     } else if (inputType === "message") {
-      setMessage(inputValue);
+      setInput({
+        ...input,
+        message: {
+          ...input.message,
+          value: inputValue,
+          valid: validationHandler(inputValue, input.message.rule),
+          touched: true,
+        },
+      });
     }
   };
 
   const submitHandler = (e) => {
     e.preventDefault();
+    alert("submitted!");
+  };
 
-    if (name && validateEmail(email) && message) {
-      setInvalidName(false);
-      setInvalidEmail(false);
-      setInvalidMessage(false);
-      setPromptMessage(successMessage);
-      setName("");
-      setEmail("");
-      setMessage("");
+  // console.log(input);
+
+  const submitButton = () => {
+    let component;
+    if (input.name.valid && input.email.valid && input.message.valid) {
+      component = (
+        <div className="btn-errMessages">
+          <button className="form-button" type="button" onClick={submitHandler}>
+            Submit
+          </button>
+        </div>
+      );
     } else {
-      if (!name) {
-        setInvalidName(true);
-        setPromptMessage(errorMessage);
-      } else {
-        setInvalidName(false);
-      }
-
-      if (!validateEmail(email)) {
-        setInvalidEmail(true);
-        setPromptMessage(errorMessage);
-      } else {
-        setInvalidEmail(false);
-      }
-
-      if (!message) {
-        setInvalidMessage(true);
-        setPromptMessage(errorMessage);
-      } else {
-        setInvalidMessage(false);
-      }
+      component = (
+        <div className="btn-errMessages">
+          <button className="form-button-disabled" type="button" disabled>
+            Submit
+          </button>
+          {!input.name.valid && input.name.touched ? (
+            <p className="errMessage">
+              <FaExclamationCircle className="errMessage-icon" />
+              <span>{input.name.errMessage}</span>
+            </p>
+          ) : (
+            ""
+          )}
+          {!input.email.valid && input.email.touched ? (
+            <p className="errMessage">
+              <FaExclamationCircle className="errMessage-icon" />
+              <span>{input.email.errMessage}</span>
+            </p>
+          ) : (
+            ""
+          )}
+          {!input.message.valid && input.message.touched ? (
+            <p className="errMessage">
+              <FaExclamationCircle className="errMessage-icon" />
+              <span>{input.message.errMessage}</span>
+            </p>
+          ) : (
+            ""
+          )}
+        </div>
+      );
     }
+
+    return component;
   };
 
   return (
@@ -89,41 +158,32 @@ function Contact() {
 
       <form className="form">
         <input
-          className={invalidName ? "error" : ""}
-          value={name}
+          className={input.name.touched && !input.name.valid ? "error" : ""}
+          value={input.name.value}
           name="name"
           type="text"
           placeholder="Enter your name"
           onChange={onChangeHandler}
         />
         <input
-          className={invalidEmail ? "error" : ""}
-          value={email}
+          className={input.email.touched && !input.email.valid ? "error" : ""}
+          value={input.email.value}
           name="email"
           type="email"
           placeholder="Enter your email"
           onChange={onChangeHandler}
         />
         <textarea
-          className={invalidMessage ? "error" : ""}
-          value={message}
+          className={
+            input.message.touched && !input.message.valid ? "error" : ""
+          }
+          value={input.message.value}
           name="message"
           placeholder="Enter your message"
           onChange={onChangeHandler}
         />
-        <button className="form-button" type="button" onClick={submitHandler}>
-          Submit
-        </button>
-        {promptMessage && (
-          <p
-            className={
-              promptMessage === successMessage ? "success-text" : "error-text"
-            }
-          >
-            {promptMessage}
-          </p>
-        )}
       </form>
+      {submitButton()}
     </div>
   );
 }
