@@ -138,7 +138,7 @@ function Contact() {
   return (
     <div className="contact">
       <div className="contact-links">
-        <a className="contact-link" href="mailto:brandon.0702@hotmail.com">
+        <a className="contact-link" href="mailto:hdbao006@gmail.com">
           Send me an email
         </a>
         <a className="contact-link" href="https://github.com/BranBao1995">

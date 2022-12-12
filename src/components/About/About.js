@@ -51,10 +51,11 @@ function About(props) {
       <div className="bio">
         <p className="bio-text">
           Hi, I am a Full Stack Web Developer with a solid and evolving
-          skillset. I am great at many things, such as building RESTful APIs
+          skillset. I am great at many things, such as: building RESTful APIs
           with Node.js and Express.js, working with SQL or NoSQL databases,
-          working with GraphQL, making visually appealing web page designs with
-          CSS, implementing user interactivity with JavaScript, and many more.
+          building MERN Stack web apps, making visually appealing web page
+          designs with CSS, implementing user interactivity with JavaScript, and
+          many more.
         </p>
         <h2 className="skills-intro">Technologies</h2>
         <ul className="technologies">
