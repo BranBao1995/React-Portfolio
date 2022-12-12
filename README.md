@@ -1,6 +1,6 @@
 # Responsive Web Dev Portfolio with React.js
 
-Bootcamp Module 20 Challenge - Building a web dev portfolio with React.js
+This is my developer portfolio built with React.js.
 
 ## Description
 
@@ -25,23 +25,19 @@ Bootcamp Module 20 Challenge - Building a web dev portfolio with React.js
 
 - This is the bio page of the portfolio:
 
-  - ![bio](./images/about-page.JPG)
+  - ![bio](./images/home.png)
 
 - This is the projects page of the portfolio:
 
-  - ![projects](./images/projects-page.JPG)
+  - ![projects](./images/projects.png)
 
 - This is the contact page of the portfolio:
 
-  - ![contact](./images/contact-page.JPG)
+  - ![contact](./images/contact.png)
 
-- Form includes field validations, error will occur if the information entered does not meet the requirements:
+- This is the resume page of the portfolio, click the "download resume" button to download my resume or click on the image itself to see full view of the resume:
 
-  - ![Form submission error](./images/contact-page-form-error.JPG)
-
-- This is the resume page of the portfolio, click the "download resume" button to download my resume:
-
-  - ![resume](./images/resume-page.JPG)
+  - ![resume](./images/resume.png)
 
 ## Credits
 
