@@ -50,12 +50,15 @@ function About(props) {
 
       <div className="bio">
         <p className="bio-text">
-          Hi, I am a Full Stack Web Developer with a solid and evolving
-          skillset. I am great at many things, such as: building RESTful APIs
-          with Node.js and Express.js, working with SQL or NoSQL databases,
-          building MERN Stack web apps, making visually appealing web page
-          designs with CSS, implementing user interactivity with JavaScript, and
-          many more.
+          Hi, I am a Full Stack Web Developer with a large skillset that tailors
+          to industry demands. I am great at: building RESTful APIs with Node.js
+          and Express.js, working with SQL or NoSQL databases, building MERN
+          Stack web apps, making visually appealing and responsive web pages,
+          and many more. I am also a graduate of the University of Ottawa with a
+          Bachelor's degree on Electrical Engineering. The sheer difficulty of
+          navigating through my university program made me develop critical
+          thinking and problem solving skills, and also the ability to think
+          outside the box when facing challenges.
         </p>
         <h2 className="skills-intro">Technologies</h2>
         <ul className="technologies">

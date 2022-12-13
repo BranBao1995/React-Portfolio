@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import { validateEmail } from "../../utils/helpers";
+import emailjs from "@emailjs/browser";
 import { FaExclamationCircle } from "react-icons/fa";
 import "./Contact.css";
 
 function Contact() {
+  const form = useRef();
+
   const [input, setInput] = useState({
     name: {
       value: "",
@@ -83,10 +86,23 @@ function Contact() {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    alert("submitted!");
+    emailjs
+      .sendForm(
+        "service_hdb",
+        "template_hdb",
+        form.current,
+        "1QsWsFeWeaB7-Czc_"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Your email has been sent :)");
+        },
+        (error) => {
+          alert(error.text);
+        }
+      );
   };
-
-  // console.log(input);
 
   const submitButton = () => {
     let component;
@@ -156,7 +172,7 @@ function Contact() {
         Or..., send me a message by submitting the form?
       </h2>
 
-      <form className="form">
+      <form ref={form} className="form">
         <input
           className={input.name.touched && !input.name.valid ? "error" : ""}
           value={input.name.value}
